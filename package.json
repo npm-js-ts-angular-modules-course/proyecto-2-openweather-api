@@ -1,0 +1,29 @@
+{
+  "name": "proyecto-2-openweather-api",
+  "version": "1.0.0",
+  "description": "Acceso a la API de Openweather",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "watch": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/npm-js-ts-angular-modules-course/proyecto-2-openweather-api.git"
+  },
+  "keywords": [],
+  "author": "Anartz Mugika Ledo <mugan86@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/npm-js-ts-angular-modules-course/proyecto-2-openweather-api/issues"
+  },
+  "homepage": "https://github.com/npm-js-ts-angular-modules-course/proyecto-2-openweather-api#readme",
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
+    "nock": "^10.0.6"
+  }
+}
