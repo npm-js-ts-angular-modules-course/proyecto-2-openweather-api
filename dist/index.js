@@ -1,9 +1,9 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
 Object.defineProperty(exports, "__esModule", { value: true });
-const APIKEY = 'ec32f42ea9357dae4e8e8dbc6d0f77f9';
+const APIKEY = '-';
 // Por nombre 
 // const url = 'https://api.openweathermap.org/data/2.5/weather?q=Barcelona,es&lang=es&units=metric&appid=' + APIKEY;
 // Por coordenadas
@@ -18,6 +18,13 @@ const APIKEY = 'ec32f42ea9357dae4e8e8dbc6d0f77f9';
 // const url = 'https://api.openweathermap.org/data/2.5/weather?zip=08001,es&lang=es&units=metric&appid=' + APIKEY
 // Baja california - Mexicali
 // 
-const url = 'https://api.openweathermap.org/data/2.5/weather?zip=21260,mx&lang=es&units=metric&appid=' + APIKEY;
-const axios_1 = __importDefault(require("axios"));
-axios_1.default.get(url).then(e => console.log(e.data)).catch(error => console.log(error));
+/*const url = 'https://api.openweathermap.org/data/2.5/weather?zip=21260,mx&lang=es&units=metric&appid=' + APIKEY
+
+import axios from 'axios';
+
+axios.get(url).then(
+    e => console.log(e.data)
+).catch(
+    error => console.log(error)
+);*/
+__export(require("./services/api.service"));

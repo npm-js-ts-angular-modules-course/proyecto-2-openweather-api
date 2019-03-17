@@ -1,5 +1,6 @@
 "use strict";
-[
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.LANGCODES = [
     { 'name': 'Arabic', 'code': 'ar' },
     { 'name': 'Bulgarian', 'code': 'bg' },
     { 'name': 'Catalan', 'code': 'ca' },

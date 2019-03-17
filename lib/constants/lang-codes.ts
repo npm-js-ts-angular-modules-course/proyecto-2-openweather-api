@@ -1,4 +1,4 @@
-[
+export const LANGCODES = [
     { 'name': 'Arabic', 'code': 'ar' },
     { 'name': 'Bulgarian', 'code': 'bg' },
     { 'name': 'Catalan', 'code': 'ca' },
@@ -32,4 +32,4 @@
     { 'name': 'Vietnamese', 'code': 'vi' },
     { 'name': 'Chinese Simplified', 'code': 'zh_cn' },
     { 'name': 'Chinese Traditional', 'code': 'zh_tw' }
-]
+];
