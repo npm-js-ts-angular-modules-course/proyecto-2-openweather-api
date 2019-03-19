@@ -4,7 +4,7 @@ Vamos a obtener la respuesta del tiempo actual de un lugar seleccionado usando d
 ## Instalación
 Tenemos que seguir estas instrucciones de instalación
 ```
-npm install <package>
+npm install anartz-proyecto-2-openweather-api
 ```
 ## Uso
 

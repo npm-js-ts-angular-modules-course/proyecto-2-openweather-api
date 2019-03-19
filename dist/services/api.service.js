@@ -51,7 +51,12 @@ class ApiService {
         }
         // LLamada a la api
         const url = `${constants_1.URL_LOCALHOST}${constants_1.CURRENT}${filtro}${parametros}`;
-        return axios_1.default.get(url).then(e => { return e.data; }).catch(error => { return error; });
+        /*return axios.get(url).then(
+            e => { return e.data }
+        ).catch(
+            error => {return error}
+        );*/
+        return this.requestApi(url);
     }
     /**
      * Obtener el tiempo mediante la localizacion
@@ -69,7 +74,12 @@ class ApiService {
         }
         // LLamada a la api
         const url = `${constants_1.URL_LOCALHOST}${constants_1.CURRENT}${filtro}${parametros}`;
-        return axios_1.default.get(url).then(e => { return e.data; }).catch(error => { return error; });
+        /*return axios.get(url).then(
+            e => { return e.data }
+        ).catch(
+            error => {return error}
+        );*/
+        return this.requestApi(url);
     }
     /**
      * Obtenemos mediante el codigo postal del lugar
@@ -87,6 +97,16 @@ class ApiService {
         }
         // LLamada a la api
         const url = `${constants_1.URL_LOCALHOST}${constants_1.CURRENT}${filtro}${parametros}`;
+        /*return axios.get(url).then(
+            e => { return e.data }
+        ).catch(
+            error => {return error}
+        );*/
+        return this.requestApi(url);
+    }
+    requestApi(url) {
+        // LLamada a la api
+        // const url = `${URL_LOCALHOST}${CURRENT}${filtro}${parametros}`;
         return axios_1.default.get(url).then(e => { return e.data; }).catch(error => { return error; });
     }
 }

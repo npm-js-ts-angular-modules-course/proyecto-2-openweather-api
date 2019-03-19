@@ -51,11 +51,12 @@ export class ApiService {
         // LLamada a la api
         const url = `${URL_LOCALHOST}${CURRENT}${filtro}${parametros}`;
 
-        return axios.get(url).then(
+        /*return axios.get(url).then(
             e => { return e.data }
         ).catch(
             error => {return error}
-        );
+        );*/
+        return this.requestApi(url);
     }
    
     /**
@@ -75,11 +76,12 @@ export class ApiService {
         // LLamada a la api
         const url = `${URL_LOCALHOST}${CURRENT}${filtro}${parametros}`;
 
-        return axios.get(url).then(
+        /*return axios.get(url).then(
             e => { return e.data }
         ).catch(
             error => {return error}
-        );
+        );*/
+        return this.requestApi(url);
     }
     
     /**
@@ -98,6 +100,18 @@ export class ApiService {
 
         // LLamada a la api
         const url = `${URL_LOCALHOST}${CURRENT}${filtro}${parametros}`;
+
+        /*return axios.get(url).then(
+            e => { return e.data }
+        ).catch(
+            error => {return error}
+        );*/
+        return this.requestApi(url);
+    }
+
+    private requestApi(url :string) {
+        // LLamada a la api
+        // const url = `${URL_LOCALHOST}${CURRENT}${filtro}${parametros}`;
 
         return axios.get(url).then(
             e => { return e.data }

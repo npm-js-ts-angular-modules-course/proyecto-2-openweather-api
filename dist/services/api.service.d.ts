@@ -31,4 +31,5 @@ export declare class ApiService {
      * @param codPais Código del pais del lugar
      */
     buscarPorZipCodigoPostal(cp: string, codPais?: string): Promise<any>;
+    private requestApi;
 }
