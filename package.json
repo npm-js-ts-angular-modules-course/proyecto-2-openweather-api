@@ -1,6 +1,6 @@
 {
   "name": "anartz-proyecto-2-openweather-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Acceso a la API de Openweather",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
