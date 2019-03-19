@@ -1,6 +1,11 @@
 # Instrucciones Openweathermap api library
 Vamos a obtener la respuesta del tiempo actual de un lugar seleccionado usando diferentes opciones de filtro
 
+## Instalación
+Tenemos que seguir estas instrucciones de instalación
+```
+npm install <package>
+```
 ## Uso
 
 ### Como añadir
@@ -23,7 +28,19 @@ const m = lib.ApiService;
 const api = new m('APIKEY', 'es', 'm');
 
 
+// Buscar por Barcelona
 api.buscarPorNombre('Barcelona', 'es').then(
+    data => console.log(data)
+);
+
+// Buscar por localización geográfica de Sidney
+api.buscarPorLocalizacionGeografica({ lat: -33.8473567, lon: 150.6517943 }).then(
+    data => console.log(data)
+);
+
+
+// Buscar por zip de Mexicali (Méjico)
+api.buscarPorZipCodigoPostal('21260' , 'mx').then(
     data => console.log(data)
 );
 
